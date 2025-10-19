@@ -1,6 +1,6 @@
 # Inference Scaling Optimization
 
-This repository contains a Jupyter notebook (`optimization_scaling.ipynb`) that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy when using best-of-k sampling strategies across various pre-configured models.
+This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy when using best-of-k sampling strategies across various pre-configured models.
 
 ## Features
 
@@ -58,7 +58,7 @@ The notebook uses stochastic simulations to model variable input/output token le
 fixed.
 
 ## Contributers
-Thanks to ....
+Thanks for collaborators
 
 ## License
 
