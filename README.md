@@ -25,19 +25,24 @@ This repository contains a Jupyter notebook that implements Monte Carlo simulati
 Run the provided shell script to install dependencies automatically:
 
 ```bash
-./install.sh
+./01_Installer/install.sh
 ```
 
 Or install manually:
 ```bash
-pip install -r requirements.txt
+pip install -r 01_Installer/requirements.txt
 ```
+
+## Repository Organization
+
+- `01_Installer/`: Contains installation scripts (`install.sh`), dependency list (`requirements.txt`), and packaging configuration (`pyproject.toml`).
+- `02_MultiobjectiveOptimization/`: Core Python module (`inference_scaling.py`) and the interactive Jupyter notebook (`Inference_scaling_MOO.ipynb`).
 
 ## Usage
 
 1. Open the notebook in Jupyter:
    ```bash
-   jupyter notebook notebooks/Inference_scaling_MOO.ipynb
+   jupyter notebook 02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb
    ```
 
 2. Run the cells sequentially to load model configurations and functions.

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inference-scaling-moo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Monte Carlo-based optimization for inference scaling."
 authors = [{name = "Minseok Jung, email = "minseok.jung@cloudear.com"}]
 dependencies = [
@@ -15,3 +15,7 @@ dependencies = [
     "pyyaml"
 ]
 requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["multiobjective_optimization"]
+package_dir = {"multiobjective_optimization" = "02_MultiobjectiveOptimization"}
