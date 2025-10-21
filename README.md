@@ -1,4 +1,21 @@
+
+
 # Inference Scaling Optimization
+<img width="756" height="241" alt="image" src="https://github.com/user-attachments/assets/c1400c7e-b60f-4e0f-a3d9-59bfdbc960fc" />
+
+
+<img width="712" height="590" alt="image" src="https://github.com/user-attachments/assets/839b26cc-bd27-4bcb-abff-27e6e700cadc" />
+<img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/01bea9cd-54f3-4f64-a151-5ada5bdb7859" />
+
+
+
+<img width="1002" height="416" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
+
+
+<img width="1100" height="508" alt="image" src="https://github.com/user-attachments/assets/b5c96341-0b91-4a78-8fc6-11bf1ff5590e" />
+
+
+
 
 This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy when using best-of-k sampling strategies across various pre-configured models.
 
