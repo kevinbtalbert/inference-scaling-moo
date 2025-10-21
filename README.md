@@ -31,6 +31,23 @@ This repository contains a Jupyter notebook that implements Monte Carlo simulati
 - **Interactive Visualizations**: 3D feasible space plots, accuracy vs. k curves, and cost vs. k curves with optimization markers.
 - **Total Budget Constraints**: Feasibility checks based on total cost and time budgets rather than per-inference limits.
 
+## Project Structure
+
+```
+inf_opt/
+├── 01_Installer/
+│   ├── install.sh
+│   └── requirements.txt
+├── 02_MultiobjectiveOptimization/
+│   ├── __init__.py
+│   ├── Inference_scaling_MOO.ipynb
+│   ├── inference_scaling.py
+│   └── __pycache__/
+├── .project-metadata.yaml
+├── pyproject.toml
+└── README.md
+```
+
 ## Requirements
 
 - Python 3.7+
@@ -91,5 +108,4 @@ fixed.
 Thanks for collaborators
 
 ## License
-
 MIT License

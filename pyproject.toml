@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "inference-scaling-moo"
 version = "0.1.1"
 description = "Monte Carlo-based optimization for inference scaling."
-authors = [{name = "Minseok Jung, email = "minseok.jung@cloudear.com"}]
+author = [{name = "Minseok Jung", email = "minseok.jung@cloudear.com"}]
 dependencies = [
     "numpy",
     "matplotlib",
