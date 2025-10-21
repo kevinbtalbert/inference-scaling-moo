@@ -20,7 +20,15 @@ This repository contains a Jupyter notebook that implements Monte Carlo simulati
 - Jupyter Notebook
 - Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
 
-Install dependencies:
+## Installation
+
+Run the provided shell script to install dependencies automatically:
+
+```bash
+./install.sh
+```
+
+Or install manually:
 ```bash
 pip install -r requirements.txt
 ```
