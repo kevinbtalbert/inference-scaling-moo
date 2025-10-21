@@ -6,6 +6,7 @@ specification_version: 1.0
 prototype_version: 1.0
 date: "2025-10-21"
 
+# You can change the sample model configuration based on your needs.
 models:
   gpt5:
     name: "GPT-5"
