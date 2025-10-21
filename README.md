@@ -18,18 +18,18 @@ This repository contains a Jupyter notebook that implements Monte Carlo simulati
 
 - Python 3.7+
 - Jupyter Notebook
-- Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`
+- Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
 
 Install dependencies:
 ```bash
-pip install numpy matplotlib ipywidgets
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 1. Open the notebook in Jupyter:
    ```bash
-   jupyter notebook optimization_scaling.ipynb
+   jupyter notebook notebooks/Inference_scaling_MOO.ipynb
    ```
 
 2. Run the cells sequentially to load model configurations and functions.

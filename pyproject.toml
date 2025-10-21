@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inference-scaling-moo"
+version = "0.1.0"
+description = "Monte Carlo-based optimization for inference scaling."
+authors = [{name = "Minseok Jung, email = "minseok.jung@cloudear.com"}]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "ipywidgets",
+    "scipy",
+    "pyyaml"
+]
+requires-python = ">=3.8"
