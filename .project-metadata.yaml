@@ -1,11 +1,12 @@
 # .project-metadata.yaml
 name: AI Inference Scaling Optimization
 description: A multi-objective optimization framework that enables to allocate inference tasks across models by balancing accuracy, cost, and latency.
-author: Cloudera Inc.
+author: Minseok Jung (Cloudera Inc.)
 specification_version: 1.0
 prototype_version: 1.0
 date: "2025-10-21"
 
+# You can change the sample model configuration based on your needs.
 models:
   gpt5:
     name: "GPT-5"
