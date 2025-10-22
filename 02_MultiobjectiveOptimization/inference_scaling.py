@@ -627,27 +627,27 @@ def update_visuals_mc(selected_model, C_max_total, T_max_total, acc_min,
     print_res("Utopia-Closest", pareto_res, f"(dist={pareto_res.get('distance', 0):.3f})")
     print_res("Knee-Point", knee_res)
 
-# ===============================
-# INTERACTIVE WIDGET SETUP
-# ===============================
-C_max_total_default = 0.50   # Total budget $
-T_max_total_default = 60.0   # Total time budget seconds
+# # ===============================
+# # INTERACTIVE WIDGET SETUP
+# # ===============================
+# C_max_total_default = 0.50   # Total budget $
+# T_max_total_default = 60.0   # Total time budget seconds
 
-print("Inference Scaling Optimization — Monte Carlo Simulations")
+# print("Inference Scaling Optimization — Monte Carlo Simulations")
 
-widgets.interact(
-    update_visuals_mc,
-    selected_model=widgets.Dropdown(options=list(MODEL_CONFIGS.keys()),
-                                    value='gpt5', description='Model'),
-    C_max_total=widgets.FloatSlider(min=0.01, max=1.0, step=0.01,
-                              value=C_max_total_default, description="Max Total Cost ($)"),
-    T_max_total=widgets.FloatSlider(min=60.0, max=60*60, step=1.0,
-                              value=T_max_total_default, description="Max Total Time (s)"),
-    acc_min=widgets.FloatSlider(min=0.88, max=0.99, step=0.01,
-                                value=0.83, description="Min ACC"),
-    k_max=widgets.IntSlider(min=0, max=2**7, step=4, value=2**8, description="k_max"),
-    mc_trials=widgets.IntSlider(min=300, max=500, step=10, value=300, description="MC Trials"),
-    parallel_factor=widgets.IntSlider(min=0, max=2**7, step=4,
-                                      value=MODEL_CONFIGS['gpt5'].default_parallel,
-                                      description="Parallelism (P)")
-)
+# widgets.interact(
+#     update_visuals_mc,
+#     selected_model=widgets.Dropdown(options=list(MODEL_CONFIGS.keys()),
+#                                     value='gpt5', description='Model'),
+#     C_max_total=widgets.FloatSlider(min=0.01, max=1.0, step=0.01,
+#                               value=C_max_total_default, description="Max Total Cost ($)"),
+#     T_max_total=widgets.FloatSlider(min=60.0, max=60*60, step=1.0,
+#                               value=T_max_total_default, description="Max Total Time (s)"),
+#     acc_min=widgets.FloatSlider(min=0.88, max=0.99, step=0.01,
+#                                 value=0.83, description="Min ACC"),
+#     k_max=widgets.IntSlider(min=0, max=2**7, step=4, value=2**8, description="k_max"),
+#     mc_trials=widgets.IntSlider(min=300, max=500, step=10, value=300, description="MC Trials"),
+#     parallel_factor=widgets.IntSlider(min=0, max=2**7, step=4,
+#                                       value=MODEL_CONFIGS['gpt5'].default_parallel,
+#                                       description="Parallelism (P)")
+# )
