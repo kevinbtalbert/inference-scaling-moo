@@ -1,18 +1,28 @@
+# Inference Scaling - Multidimensional Optimization
+
+Multiobjective optimization (MOO) in three-dimensional space. 
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/8ee334c9-7aaa-45a7-96c4-d2f7b65e6802" width="380" /></td>
+    <td><img src="https://github.com/user-attachments/assets/3818d179-ab64-4826-824d-91e0072f42f3" width="380" /></td>
+    <td><img src="https://github.com/user-attachments/assets/43e62b53-ed3c-4040-a1e6-3cab029e2791" width="380" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/ead77660-e598-44ff-ad0d-ce84831a4f2c" width="380" /></td>
+    <td><img src="https://github.com/user-attachments/assets/19464d87-8fe9-4f9f-9a6c-183f8de6c27b" width="380" /></td>
+    <td><img src="https://github.com/user-attachments/assets/54ca3352-e262-479d-89ea-1e57db0b59a1" width="380" /></td>
+  </tr>
+</table>
 
 
-# Inference Scaling Optimization
-<img width="756" height="241" alt="image" src="https://github.com/user-attachments/assets/c1400c7e-b60f-4e0f-a3d9-59bfdbc960fc" />
 
 
-<img width="712" height="590" alt="image" src="https://github.com/user-attachments/assets/839b26cc-bd27-4bcb-abff-27e6e700cadc" />
-<img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/01bea9cd-54f3-4f64-a151-5ada5bdb7859" />
+We need to configure the optimal scale K among accuracy, latency, and cost rather than relying on the 2D tradeoff between performance and compute. 
+<img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
 
-
-
-<img width="1002" height="416" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
-
-
-<img width="1100" height="508" alt="image" src="https://github.com/user-attachments/assets/b5c96341-0b91-4a78-8fc6-11bf1ff5590e" />
+The inference scaling is espeically 
+<img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/b5c96341-0b91-4a78-8fc6-11bf1ff5590e" />
 
 
 
