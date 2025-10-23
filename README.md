@@ -18,10 +18,12 @@ Multiobjective optimization (MOO) in three-dimensional space.
 
 
 
-We need to configure the optimal scale K among accuracy, latency, and cost rather than relying on the 2D tradeoff between performance and compute. 
+We need to configure the optimal scale K among accuracy, latency, and cost rather than relying on the 2D tradeoff between performance and compute.
+
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
 
-The inference scaling is espeically 
+The inference scaling is espeically
+
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/b5c96341-0b91-4a78-8fc6-11bf1ff5590e" />
 
 
