@@ -1,5 +1,5 @@
 # Inference Scaling - Multidimensional Optimization
-[![arXiv](https://img.shields.io/badge/arXiv-2501.12345-b31b1b.svg)](https://arxiv.org/abs/2501.12345)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.18905-b31b1b.svg)](https://arxiv.org/abs/2510.18905)
 
 
 Efficient AI inference scaling is essential for practical deployment. Instead of relying on static scaling heuristics or simple bivariate trade-offs between performance and compute, we should incorporate multiple factors such as cost, latency, and accuracy. This project models inference scaling as a multi-objective optimization (MOO) problem and simulates it using 3D and 2D space. Below is the sample output:
