@@ -133,4 +133,4 @@ Thanks to **Nashua Springberry** and **Michael Schuler** for constructive commen
 Thanks to collaborators
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
