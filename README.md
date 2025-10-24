@@ -3,7 +3,6 @@
 [![Reproducible](https://img.shields.io/badge/Reproducible-Yes-success.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/yourname/inference-scaling.svg?style=social&label=Star)](https://github.com/yourname/inference-scaling)
-[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 Efficient AI inference scaling is essential for practical deployment. Instead of relying on static scaling heuristics or simple bivariate trade-offs between performance and compute, we should incorporate multiple factors such as cost, latency, and accuracy. This project models inference scaling as a multi-objective optimization (MOO) problem and simulates it using 3D and 2D space. Below is the sample output:
 
@@ -87,10 +86,10 @@ pip install -r 01_Installer/requirements.txt
 
 2. Run the cells sequentially to load model configurations and functions.
 
-3. Use the interactive widget at the end to select a model, adjust budget constraints (total cost, total time, minimum accuracy), and visualize results.
+3. Use the interactive widget at the end to select a model, adjust budget constraints (max-cost, max-time, min-accuracy), and visualize results.
 
 4. Key parameters:
-   - `selected_model`: Choose from available models (e.g., 'gpt5', 'nvidia-nemotron-ultra-253b').
+   - `selected_model`: Choose from available sample models (e.g., 'gpt5', 'nvidia-nemotron-ultra-253b').
    - `C_max_total`: Maximum total cost in dollars.
    - `T_max_total`: Maximum total time in seconds.
    - `acc_min`: Minimum acceptable accuracy.
@@ -100,18 +99,17 @@ pip install -r 01_Installer/requirements.txt
 
 ## Output
 
-- **3D Feasible Cube Plot**: Visualizes the trade-off space with constraint planes, MC trajectories, and optimal points.
+- **3D Feasible Cube Plot**: Visualizes the trade-off in the 3D space with constraint planes, MC trajectories, and optimal points (optimality could be different for priority).
 - **Accuracy vs. k Plot**: Shows how accuracy improves with more inferences.
 - **Total Cost vs. k Plot**: Displays cost scaling with k.
 - **Text Summary**: Prints optimal k values and metrics for each method.
 
 ## Methodology
-
 The notebook uses stochastic simulations to model variable input/output token lengths and accuracies. Optimization focuses on total budget constraints, aligning with real-world deployment scenarios where overall cost and time limits are 
 fixed.
 
 ## Contributers
-Thanks for collaborators
+Thanks to collaborators
 
 ## License
 MIT License
