@@ -1,9 +1,15 @@
-# Inference Scaling - Multidimensional Optimization
-[![arXiv](https://img.shields.io/badge/arXiv-2501.18905-b31b1b.svg)](https://arxiv.org/abs/2510.18905)
+# Inference Scaling - Multiobjective Optimization
+[![arXiv](https://img.shields.io/badge/arXiv-2510.18905-b31b1b.svg)](https://arxiv.org/abs/2510.18905)
 [![Reproducible](https://img.shields.io/badge/Reproducible-Yes-success.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/yourname/inference-scaling.svg?style=social&label=Star)](https://github.com/yourname/inference-scaling)
 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b9178ff5-98e2-4327-a0f8-7cfbdb190ebf" width="350" height="350" alt="Inference Scaling Logo" />
+</p>
+
+# Efficient AI Inference
 Efficient AI inference scaling is essential for practical deployment. Instead of relying on static scaling heuristics or simple bivariate trade-offs between performance and compute, we should incorporate multiple factors such as cost, latency, and accuracy. This project models inference scaling as a multi-objective optimization (MOO) problem and simulates it using 3D and 2D space. Below is the sample output:
 
 <table>
@@ -23,8 +29,9 @@ Efficient AI inference scaling is essential for practical deployment. Instead of
 A feasible space shaped by 3D constraints captures values that a 2D space fails to account for.
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
 
-This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy across various pre-configured models.
+
 ## Project Structure
+This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy across various pre-configured models.
 ```
 inf_opt/
 ├── 01_Installer/
@@ -60,7 +67,6 @@ inf_opt/
 - Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
 
 ## Installation
-
 Run the provided shell script to install dependencies automatically:
 
 ```bash
@@ -109,7 +115,22 @@ The notebook uses stochastic simulations to model variable input/output token le
 fixed.
 
 ## Contributers
+Thanks to **Nashua Springberry** and **Michael Schuler** for constructive comments on the design and programming for the simulation.
+
+## Citation
+```
+@misc{jung2025optimizeinference,
+      title={3D Optimization for AI Inference Scaling: Balancing Accuracy, Cost, and Latency}, 
+      author={Minseok Jung and Abhas Ricky and Muhammad Rameez Chatni},
+      year={2025},
+      eprint={2510.18905},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.18905}, 
+}
+```
+
 Thanks to collaborators
 
 ## License
-MIT License
+This project is licensed under the [MIT License](LICENSE).
