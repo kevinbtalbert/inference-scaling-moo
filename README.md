@@ -1,6 +1,7 @@
 # Inference Scaling - Multidimensional Optimization
 [![arXiv](https://img.shields.io/badge/arXiv-2501.18905-b31b1b.svg)](https://arxiv.org/abs/2510.18905)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 Efficient AI inference scaling is essential for practical deployment. Instead of relying on static scaling heuristics or simple bivariate trade-offs between performance and compute, we should incorporate multiple factors such as cost, latency, and accuracy. This project models inference scaling as a multi-objective optimization (MOO) problem and simulates it using 3D and 2D space. Below is the sample output:
 
@@ -18,33 +19,11 @@ Efficient AI inference scaling is essential for practical deployment. Instead of
 </table>
 
 
-We need to configure the optimal scale K among accuracy, latency, and cost rather than relying on the 2D tradeoff between performance and compute.
-
+A feasible space shaped by 3D constraints captures values that a 2D space fails to account for.
 <img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/86edd5cf-b41c-44e3-82f9-8a6bc3d74c08" />
 
-The inference scaling is espeically
-
-<img width="512" height="256" alt="image" src="https://github.com/user-attachments/assets/b5c96341-0b91-4a78-8fc6-11bf1ff5590e" />
-
-
-
-
-This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy when using best-of-k sampling strategies across various pre-configured models.
-
-## Features
-
-- **Model Configurations**: Pre-defined settings for multiple AI models (e.g., GPT-5 variants, Nvidia Nemotron, Qwen3 series) including cost per token, latency, and accuracy distributions.
-- **Monte Carlo Simulations**: Robust estimation of performance metrics with configurable trial counts and parallelization factors.
-- **Optimization Methods**:
-  - Accuracy-optimal selection
-  - Cube-optimal (volume-based) selection
-  - Pareto frontier analysis with utopia-closest point
-  - Knee point detection using curvature or perpendicular distance
-- **Interactive Visualizations**: 3D feasible space plots, accuracy vs. k curves, and cost vs. k curves with optimization markers.
-- **Total Budget Constraints**: Feasibility checks based on total cost and time budgets rather than per-inference limits.
-
+This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy across various pre-configured models.
 ## Project Structure
-
 ```
 inf_opt/
 ├── 01_Installer/
@@ -60,8 +39,21 @@ inf_opt/
 └── README.md
 ```
 
-## Requirements
 
+## Features
+
+- **Model Configurations**: Pre-defined settings for multiple AI models (e.g., GPT-5 variants, Nvidia Nemotron, Qwen3 series), including cost per token, latency, and accuracy distributions.
+- **Monte Carlo Simulations**: Statistical estimation of performance metrics with configurable trial counts and parallelization factors.
+- **Optimization Methods**:
+  - 1. Maximal Accuracy selection
+  - 2. Maximal Cube selection
+  - 3. Pareto frontiers and utopia-closest point
+  - 4. Pareto frontiers and Knee point detection
+- **Interactive Visualizations**: 3D feasible space plots
+- **Constraints**: Feasibility checks based on total cost and time budgets, and minimal accuracy requirements.
+
+
+## Requirements
 - Python 3.7+
 - Jupyter Notebook
 - Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
