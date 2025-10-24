@@ -110,9 +110,6 @@ pip install -r 01_Installer/requirements.txt
 - **Total Cost vs. k Plot**: Displays cost scaling with k.
 - **Text Summary**: Prints optimal k values and metrics for each method.
 
-## Methodology
-The notebook uses stochastic simulations to model variable input/output token lengths and accuracies. Optimization focuses on total budget constraints, aligning with real-world deployment scenarios where overall cost and time limits are 
-fixed.
 
 ## Contributers
 Thanks to **Nashua Springberry** and **Michael Schuler** for constructive comments on the design and programming for the simulation.
@@ -129,8 +126,6 @@ Thanks to **Nashua Springberry** and **Michael Schuler** for constructive commen
       url={https://arxiv.org/abs/2510.18905}, 
 }
 ```
-
-Thanks to collaborators
 
 ## License
 This project is licensed under the MIT License.
