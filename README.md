@@ -66,17 +66,6 @@ inf_opt/
 - Jupyter Notebook
 - Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
 
-## Installation
-Run the provided shell script to install dependencies automatically:
-
-```bash
-./01_Installer/install.sh
-```
-
-Or install manually:
-```bash
-pip install -r 01_Installer/requirements.txt
-```
 
 ## Repository Organization
 
