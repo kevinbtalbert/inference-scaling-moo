@@ -145,7 +145,7 @@ jupyter notebook 02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb
 
 
 ## Contributers
-Thanks to **Nashua Springberry** and **Michael Schuler** for constructive comments on the design and programming for the simulation.
+Thanks to **Nashua Springberry (Cloudera)** and **Michael Schuler (Cloudera)** for constructive comments on the design and programming for the simulation.
 
 ## Citation
 ```
