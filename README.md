@@ -106,7 +106,7 @@ Run the provided shell script to set up dependencies automatically:
    source inf_opt_env/bin/activate
    ```
 
-2. **Install dependencies:**
+2. **Install dependencies (includes Jupyter):**
    ```bash
    pip install -r 01_Installer/requirements.txt
    ```
@@ -116,21 +116,34 @@ Run the provided shell script to set up dependencies automatically:
    python -m ipykernel install --user --name=inf_opt_env --display-name="Inference Optimization"
    ```
 
-**Note:** Both options only install dependencies. To run the Jupyter notebook, follow the Usage section below.
-
-
 ## Usage
 
-1. Open the notebook in Jupyter:
-   ```bash
-   jupyter notebook 02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb
-   ```
+### Launch Jupyter Notebook (Recommended)
+Navigate to the notebook directory and launch Jupyter to avoid import issues:
 
-2. Run the cells sequentially to load model configurations and functions.
+```bash
+# Navigate to the notebook directory first
+cd 02_MultiobjectiveOptimization
+jupyter notebook Inference_scaling_MOO.ipynb
+```
 
-3. Use the interactive widget at the end to select a model, adjust budget constraints (max-cost, max-time, min-accuracy), and visualize results.
+### Alternative: Launch from project root
+```bash
+# From the project root directory
+jupyter notebook 02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb
+```
 
-4. Key parameters:
+### Using VS Code
+1. Open the file `02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb` in VS Code
+2. Select the "Inference Optimization" kernel (if using virtual environment)
+3. Run cells interactively
+
+### Running the Notebook
+1. Run the cells sequentially to load model configurations and functions.
+
+2. Use the interactive widget at the end to select a model, adjust budget constraints (max-cost, max-time, min-accuracy), and visualize results.
+
+3. Key parameters:
    - `selected_model`: Choose from available sample models (e.g., 'gpt5', 'nvidia-nemotron-ultra-253b').
    - `C_max_total`: Maximum total cost in dollars.
    - `T_max_total`: Maximum total time in seconds.
@@ -138,6 +151,9 @@ Run the provided shell script to set up dependencies automatically:
    - `k_max`: Maximum number of inferences to test.
    - `mc_trials`: Number of Monte Carlo trials for statistical robustness.
    - `parallel_factor`: Degree of parallelism (P).
+
+**Note:** If you encounter import errors, make sure to launch Jupyter from the `02_MultiobjectiveOptimization` directory where the `inference_scaling.py` file is located.
+
 
 ## Output
 
