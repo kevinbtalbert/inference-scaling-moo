@@ -74,14 +74,7 @@ inf_opt/
 
 ## Installation
 
-### Option 1: Automated Installation (Recommended)
-Run the provided shell script to set up dependencies automatically:
-
-```bash
-./01_Installer/install.sh
-```
-
-### Option 2: Manual Installation with Virtual Environment
+### Option 1: Manual Installation with Virtual Environment
 
 1. **Create and activate a virtual environment:**
    ```bash
@@ -105,18 +98,17 @@ Run the provided shell script to set up dependencies automatically:
    python -m ipykernel install --user --name=inf_opt_env --display-name="Inference Optimization"
    ```
 
-## Usage
-
-### Launch Jupyter Notebook (Recommended)
-Navigate to the notebook directory and launch Jupyter to avoid import issues:
+### Option 2: Shell
+Run the provided shell script to set up dependencies automatically:
 
 ```bash
-# Navigate to the notebook directory first
-cd 02_MultiobjectiveOptimization
-jupyter notebook Inference_scaling_MOO.ipynb
+./01_Installer/install.sh
 ```
 
-### Alternative: Launch from project root
+
+## Usage
+
+### Launch from project root
 ```bash
 # From the project root directory
 jupyter notebook 02_MultiobjectiveOptimization/Inference_scaling_MOO.ipynb
