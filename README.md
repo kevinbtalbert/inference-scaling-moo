@@ -83,6 +83,42 @@ pip install -r 01_Installer/requirements.txt
 - `01_Installer/`: Contains installation scripts (`install.sh`), dependency list (`requirements.txt`), and packaging configuration (`pyproject.toml`).
 - `02_MultiobjectiveOptimization/`: Core Python module (`inference_scaling.py`) and the interactive Jupyter notebook (`Inference_scaling_MOO.ipynb`).
 
+## Installation
+
+### Option 1: Automated Installation (Recommended)
+Run the provided shell script to set up dependencies automatically:
+
+```bash
+./01_Installer/install.sh
+```
+
+### Option 2: Manual Installation with Virtual Environment
+
+1. **Create and activate a virtual environment:**
+   ```bash
+   # Create virtual environment
+   python -m venv inf_opt_env
+   
+   # Activate virtual environment (Windows)
+   inf_opt_env\Scripts\activate
+   
+   # Activate virtual environment (macOS/Linux)
+   source inf_opt_env/bin/activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r 01_Installer/requirements.txt
+   ```
+
+3. **Install Jupyter kernel for the virtual environment:**
+   ```bash
+   python -m ipykernel install --user --name=inf_opt_env --display-name="Inference Optimization"
+   ```
+
+**Note:** Both options only install dependencies. To run the Jupyter notebook, follow the Usage section below.
+
+
 ## Usage
 
 1. Open the notebook in Jupyter:
