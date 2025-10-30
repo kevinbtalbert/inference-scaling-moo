@@ -160,5 +160,9 @@ Thanks to **Nashua Springberry (Cloudera)** and **Michael Schuler (Cloudera)** f
 }
 ```
 
+
+...
 ## License
-This project is licensed under the MIT License.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
+
