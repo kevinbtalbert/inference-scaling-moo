@@ -1,0 +1,41 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Compiled extensions
+*.so
+
+# Packaging / build artifacts
+*.egg-info/
+pip-wheel-metadata/
+build/
+dist/
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Project-specific generated folders
+02_MultiobjectiveOptimization/__pycache__/
+02_MultiobjectiveOptimization/.ipynb_checkpoints/
