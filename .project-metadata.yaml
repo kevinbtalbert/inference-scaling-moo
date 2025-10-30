@@ -6,6 +6,12 @@ specification_version: 1.0
 prototype_version: 1.0
 date: "2025-10-21"
 
+runtimes:
+  - editor: VS Code
+    kernel: Python 3.11
+    edition: Standard
+
+
 # You can change the sample model configuration based on your needs.
 models:
   gpt5:
