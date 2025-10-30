@@ -1,7 +1,7 @@
 # Inference Scaling - Multiobjective Optimization
 [![arXiv](https://img.shields.io/badge/arXiv-2510.18905-b31b1b.svg)](https://arxiv.org/abs/2510.18905)
 [![Reproducible](https://img.shields.io/badge/Reproducible-Yes-success.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/yourname/inference-scaling.svg?style=social&label=Star)](https://github.com/yourname/inference-scaling)
 
 
@@ -163,6 +163,5 @@ Thanks to **Nashua Springberry (Cloudera)** and **Michael Schuler (Cloudera)** f
 
 ...
 ## License
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
