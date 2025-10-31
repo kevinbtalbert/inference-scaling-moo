@@ -33,7 +33,7 @@ A feasible space shaped by 3D constraints captures values that a 2D space fails 
 ## Project Structure
 This repository contains a Jupyter notebook that implements Monte Carlo simulations for optimizing inference scaling in AI models. It explores trade-offs between cost, time, and accuracy across various pre-configured models.
 ```
-inf_opt/
+inference-optimization-moo/
 ├── 01_Installer/
 │   ├── install.sh
 │   └── requirements.txt
@@ -79,13 +79,13 @@ inf_opt/
 1. **Create and activate a virtual environment:**
    ```bash
    # Create virtual environment
-   python -m venv inf_opt_env
+   python -m venv inference-optimization-moo_env
    
    # Activate virtual environment (Windows)
-   inf_opt_env\Scripts\activate
+   inference-optimization-moo_env\Scripts\activate
    
    # Activate virtual environment (macOS/Linux)
-   source inf_opt_env/bin/activate
+   source inference-optimization-moo_env/bin/activate
    ```
 
 2. **Install dependencies (includes Jupyter):**
@@ -95,7 +95,7 @@ inf_opt/
 
 3. **Install Jupyter kernel for the virtual environment:**
    ```bash
-   python -m ipykernel install --user --name=inf_opt_env --display-name="Inference Optimization"
+   python -m ipykernel install --user --name=inference-optimization-moo_env --display-name="Inference Optimization"
    ```
 
 ### Option 2: Shell
