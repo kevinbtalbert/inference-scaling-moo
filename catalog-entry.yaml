@@ -27,7 +27,7 @@ entries:
       - Inference Scaling
       - Monte Carlo Simulation
       - LLM Efficiency
-    git_url: "https://github.com/masonjung/inference-optimization-moo.git"
+    git_url: "https://github.com/masonjung/inference-scaling-moo.git"
     git_ref: "main"
     is_prototype: true
     is_community: true
