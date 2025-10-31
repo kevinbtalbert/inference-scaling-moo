@@ -62,7 +62,7 @@ inference-optimization-moo/
 
 
 ## Requirements
-- Python 3.7+
+- Python 3.9+
 - Jupyter Notebook
 - Libraries: `numpy`, `matplotlib`, `ipywidgets`, `mpl_toolkits.mplot3d`, `pyyaml`
 
