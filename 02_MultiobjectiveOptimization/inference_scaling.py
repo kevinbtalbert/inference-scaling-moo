@@ -31,7 +31,7 @@ class ModelConfig:
                 f"ACC({self.acc_mean:.3f}±{self.acc_std:.3f}), "
                 f"P={self.default_parallel}")
 
-def load_model_configs(metadata_path=".project-metadata.yaml"):
+def load_model_configs(metadata_path="config.yaml"):
     config_file = Path(__file__).parent.parent / metadata_path
     with open(config_file, 'r') as f:
         data = yaml.safe_load(f)
