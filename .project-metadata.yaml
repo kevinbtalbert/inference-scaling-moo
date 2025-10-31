@@ -7,7 +7,16 @@ prototype_version: 1.0
 date: "2025-10-21"
 
 runtimes:
-  - editor: VS Code
+  - editor: JupyterLab
+    kernel: Python 3.11
+    edition: Standard
+
+
+tasks:
+  - type: reun_session
+    name: Install dependencies
+    script: 01_Installer/Install.py
+    
     kernel: Python 3.11
     edition: Standard
 
