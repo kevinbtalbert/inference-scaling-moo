@@ -1,6 +1,6 @@
 entries:
   - title: AI Inference Scaling Optimization
-    label: inf-opt
+    label: inference-scaling-moo
     short_description: |
       Multi-objective optimization framework for efficient AI inference scaling across accuracy, cost, and latency.
     long_description: |
