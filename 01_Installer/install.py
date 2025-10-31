@@ -1,3 +1,3 @@
 import subprocess
 
-print(subprocess.run(["sh 01_Installer/install.sh"], shell=True))
+print(subprocess.run("cd 01_Installer && sh install.sh", shell=True))
